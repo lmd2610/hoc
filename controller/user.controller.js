@@ -14,27 +14,14 @@ module.exports.search = function(req,res){
   });
 };
 module.exports.create = function(req,res){
+  console.log(req.cookies);
   res.render('users/create');
   
 };
 module.exports.postCreate = function(req,res){
 
   db.get('users').push(req.body).write();
-  var errors = [];
-  if(!req.body.name){
-    errors.push('Name is required.');
-
-  }
-  else if(!req.body.phone){
-    errors.push('Phone is required.');
-  }
-  if(errors.length){
-    res.render('users/create',{
-      errors: errors,
-      values: req.body
-    })
-    return;
-  }
+  
   // console.log(req.body);
   // res.json(req.body);
   res.redirect("/users");

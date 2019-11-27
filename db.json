@@ -2,22 +2,9 @@
   "users": [
     {
       "id": 1,
-      "name": "duc"
-    },
-    {
-      "id": 2,
-      "name": "Sao"
-    },
-    {
-      "name": "BA"
-    },
-    {
       "name": "duc",
-      "phone": ""
-    },
-    {
-      "name": "duc",
-      "phone": "231"
+      "email": "lmd2610",
+      "password": "123"
     }
   ]
 }
